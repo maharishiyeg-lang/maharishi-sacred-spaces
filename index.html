@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maharishi Sacred Spaces — Quantum Spiritual Guide Eric Swanson. Explore sacred tools, consciousness teachings, and transformative meditation practices." />
+  <meta name="author" content="Eric Swanson" />
+  <meta property="og:title" content="Maharishi Sacred Spaces" />
+  <meta property="og:description" content="Quantum Spiritual Guide to aid others in their alignment with self, using sacred tools and techniques to create balance." />
+  <meta property="og:type" content="website" />
+  <title>Maharishi Sacred Spaces | Eric Swanson</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sacred Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Maharishi Sacred Spaces Home">
+      <!-- MSS Emblem SVG -->
+      <svg class="mss-emblem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   stop-color="#C9A84C"/>
+            <stop offset="50%"  stop-color="#E8C96A"/>
+            <stop offset="100%" stop-color="#C9A84C"/>
+          </linearGradient>
+          <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   stop-color="#1A3A2A"/>
+            <stop offset="100%" stop-color="#254D38"/>
+          </linearGradient>
+        </defs>
+        <!-- Outer circle -->
+        <circle cx="50" cy="50" r="48" fill="url(#greenGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+        <!-- Inner sacred geometry -->
+        <polygon points="50,12 88,72 12,72" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.6"/>
+        <polygon points="50,88 12,28 88,28" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.6"/>
+        <!-- MSS Letters -->
+        <text x="50" y="46" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="url(#goldGrad)" letter-spacing="2">MSS</text>
+        <!-- Decorative dots -->
+        <circle cx="50" cy="12" r="2" fill="url(#goldGrad)"/>
+        <circle cx="88" cy="72" r="2" fill="url(#goldGrad)"/>
+        <circle cx="12" cy="72" r="2" fill="url(#goldGrad)"/>
+        <circle cx="50" cy="88" r="2" fill="url(#goldGrad)"/>
+        <circle cx="12" cy="28" r="2" fill="url(#goldGrad)"/>
+        <circle cx="88" cy="28" r="2" fill="url(#goldGrad)"/>
+        <!-- Bottom text -->
+        <text x="50" y="62" text-anchor="middle" font-family="serif" font-size="5.5" fill="url(#goldGrad)" letter-spacing="1.5">SACRED SPACES</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-main">Maharishi</span>
+        <span class="logo-sub">Sacred Spaces</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#book">The Book</a></li>
+      <li><a href="#meditation">Meditation</a></li>
+      <li><a href="#connect">Connect</a></li>
+      <li><a href="#connect" class="nav-cta">Begin Your Journey</a></li>
+    </ul>
+
+    <div class="hamburger" role="button" aria-label="Toggle menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-bg-pattern"></div>
+
+    <!-- Sacred Geometry Background -->
+    <div class="sacred-geometry" aria-hidden="true">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="400" cy="400" r="380" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+        <circle cx="400" cy="400" r="280" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+        <circle cx="400" cy="400" r="180" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+        <polygon points="400,30 750,620 50,620" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+        <polygon points="400,770 50,180 750,180" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+        <polygon points="400,100 700,580 100,580" fill="none" stroke="#C9A84C" stroke-width="0.4"/>
+        <polygon points="400,700 100,220 700,220" fill="none" stroke="#C9A84C" stroke-width="0.4"/>
+        <line x1="400" y1="20" x2="400" y2="780" stroke="#C9A84C" stroke-width="0.3"/>
+        <line x1="20" y1="400" x2="780" y2="400" stroke="#C9A84C" stroke-width="0.3"/>
+        <line x1="70" y1="70" x2="730" y2="730" stroke="#C9A84C" stroke-width="0.3"/>
+        <line x1="730" y1="70" x2="70" y2="730" stroke="#C9A84C" stroke-width="0.3"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Welcome to the Sacred Space ✦</p>
+      <h1 class="hero-title">Maharishi<br/>Sacred Spaces</h1>
+      <p class="hero-subtitle">by Eric Swanson</p>
+      <div class="hero-divider"></div>
+      <p class="hero-tagline">A Quantum Spiritual Guide to aid others in their alignment with self, using sacred tools and techniques to create balance.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-primary">
+          <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          Explore the Book
+        </a>
+        <a href="#meditation" class="btn btn-outline">
+          <i class="fa-solid fa-om" aria-hidden="true"></i>
+          The Meditation
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Descend</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── About / Biography ──────────────────────────────────── -->
+  <section class="about-section" id="about" aria-label="About Eric Swanson">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal">
+        <!-- Portrait placeholder — replace src with your photo -->
+        <div class="about-portrait-placeholder">
+          <div class="placeholder-icon">✦</div>
+          <span>Portrait of Eric Swanson</span>
+          <span style="font-size:0.55rem; opacity:0.6;">(Upload your photo)</span>
+        </div>
+        <div class="about-frame-corner tl"></div>
+        <div class="about-frame-corner tr"></div>
+        <div class="about-frame-corner bl"></div>
+        <div class="about-frame-corner br"></div>
+        <div class="about-mss-badge">MSS</div>
+      </div>
+
+      <div class="about-content reveal">
+        <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+          <span class="section-eyebrow">✦ The Guide ✦</span>
+        </div>
+        <h2 class="about-name">Eric Swanson</h2>
+        <p class="about-title-role">Quantum Spiritual Guide &nbsp;·&nbsp; Author &nbsp;·&nbsp; Teacher</p>
+
+        <div class="about-bio">
+          <p>
+            <strong>Eric Swanson</strong> is the founder of <strong>Maharishi Sacred Spaces</strong> — a sanctuary of consciousness, sacred tools, and transformative practice. Drawing from the deep wellspring of quantum spirituality, Eric has devoted his life to guiding others toward alignment with their truest self.
+          </p>
+          <p>
+            His work bridges the ancient and the quantum: weaving together chakra wisdom, sacred geometry, and the science of consciousness into a living, breathing practice. Through his teachings, Eric illuminates the hidden architecture of the human energy field — helping seekers unlock their personal power, speak their truth, and awaken to the divine intelligence that lives within.
+          </p>
+          <p>
+            With over 251 posts of sacred content shared across his community, Eric has cultivated a growing circle of souls drawn to the mysteries of energy, light, and inner transformation. His Chakra Series, Membership Tiers, and sacred tool offerings reflect a commitment to making spiritual wisdom accessible, experiential, and deeply personal.
+          </p>
+          <p>
+            Now, Eric brings his teachings into their most potent form yet — a debut book and a guided meditation experience designed to initiate a new chapter in your spiritual journey.
+          </p>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-chip">
+            <span class="chip-icon">🔮</span>
+            <span>Quantum Consciousness</span>
+          </div>
+          <div class="pillar-chip">
+            <span class="chip-icon">✦</span>
+            <span>Sacred Geometry</span>
+          </div>
+          <div class="pillar-chip">
+            <span class="chip-icon">🌀</span>
+            <span>Chakra Mastery</span>
+          </div>
+          <div class="pillar-chip">
+            <span class="chip-icon">🌿</span>
+            <span>Sacred Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sacred Quote ───────────────────────────────────────── -->
+  <div class="quote-section" aria-label="Sacred quote">
+    <div class="quote-inner reveal">
+      <p class="sacred-quote">
+        Within every soul lies a sacred space — a still point where the quantum and the divine converge, where healing begins, and where your truest power awakens.
+      </p>
+      <span class="quote-attribution">— Eric Swanson, Maharishi Sacred Spaces</span>
+    </div>
+  </div>
+
+  <!-- ── Book Section ───────────────────────────────────────── -->
+  <section class="book-section" id="book" aria-label="The Book">
+    <div class="book-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ The Sacred Text ✦</span>
+        <h2 class="section-title">The Book</h2>
+        <div class="section-rule"></div>
+        <p class="section-lead">A transformative workbook for those ready to walk the path of conscious alignment.</p>
+      </div>
+
+      <div class="book-showcase">
+        <div class="book-cover-wrap reveal">
+          <div class="book-glow"></div>
+          <img src="assets/images/book-cover.png" alt="Magical Keys: A Piscean's Perspective on Dealing with Life's Complexity — by Maharishi Sacred Spaces" class="book-cover-img" id="book-cover-container" />
+        </div>
+
+        <div class="book-details reveal">
+          <span class="book-label">✦ Now Available ✦</span>
+          <h3 class="book-title">Magical Keys</h3>
+          <p class="book-author" style="font-style:italic; color:var(--text-muted); font-family:'Cormorant Garamond',serif; font-size:0.95rem; letter-spacing:0.05em; text-transform:none;">A Piscean's Perspective on Dealing with Life's Complexity</p>
+          <p class="book-author">by Maharishi Sacred Spaces</p>
+
+          <p class="book-description">
+            A golden key. A cosmic spiral. Seven chakras lighting the path. <strong>Magical Keys</strong> is a transformative workbook written from the deep intuitive waters of Piscean wisdom — a guide for navigating life's complexity with grace, clarity, and sacred awareness. Through sacred tools, energetic practices, and quantum insight, this book unlocks the hidden doors within you, revealing the power, peace, and purpose that have always been yours.
+          </p>
+
+          <div class="book-purchase-options">
+            <!-- Digital Download -->
+            <div class="purchase-option">
+              <div class="option-info">
+                <span class="option-type">
+                  <i class="fa-solid fa-download" aria-hidden="true"></i>
+                  &nbsp; Digital Download
+                </span>
+                <span class="option-desc">Instant PDF — Begin your journey today</span>
+              </div>
+              <a href="#connect" class="btn btn-primary" style="padding:0.6rem 1.25rem; font-size:0.65rem;">
+                Get It Now
+              </a>
+            </div>
+
+            <!-- Hardcover Placeholder -->
+            <div class="purchase-option coming-soon">
+              <div class="option-info">
+                <span class="option-type">
+                  <i class="fa-solid fa-book" aria-hidden="true"></i>
+                  &nbsp; Hardcover Workbook
+                </span>
+                <span class="option-desc">Physical edition — arriving soon</span>
+              </div>
+              <span class="option-badge badge-soon">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Meditation Section ─────────────────────────────────── -->
+  <section class="meditation-section" id="meditation" aria-label="The Power Pyramid Meditation">
+    <div class="meditation-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Sacred Sound Practice ✦</span>
+        <h2 class="section-title">The Meditation</h2>
+        <div class="section-rule"></div>
+        <p class="section-lead">Enter the silence. Activate the power. Align with the three.</p>
+      </div>
+
+      <div class="meditation-showcase">
+        <div class="meditation-content reveal">
+          <span class="book-label">✦ Digital Download — Coming Soon ✦</span>
+          <h3 class="meditation-title">The Power Pyramid:<br/>The Power of 3</h3>
+          <p class="meditation-subtitle">A Guided Meditation Experience</p>
+
+          <p class="meditation-description">
+            The pyramid is one of humanity's most ancient sacred forms — a vessel of concentrated energy, a bridge between earth and cosmos. <strong>The Power Pyramid: The Power of 3</strong> is a guided meditation journey that harnesses the sacred geometry of the pyramid and the mystical law of three to activate your deepest energetic centers.
+          </p>
+
+          <p class="meditation-description">
+            Through sound, breath, and intentional visualization, this meditation guides you into alignment with the three pillars of your being — mind, body, and spirit — and anchors you within the quantum field of infinite possibility. This is not merely a meditation. It is an initiation.
+          </p>
+
+          <ul class="meditation-features">
+            <li>
+              <span class="feat-icon"><i class="fa-solid fa-triangle-exclamation" style="color:var(--gold);transform:rotate(180deg);"></i></span>
+              <span>Sacred pyramid geometry activation</span>
+            </li>
+            <li>
+              <span class="feat-icon"><i class="fa-solid fa-infinity"></i></span>
+              <span>The Power of 3 — mind, body &amp; spirit alignment</span>
+            </li>
+            <li>
+              <span class="feat-icon"><i class="fa-solid fa-wave-square"></i></span>
+              <span>Quantum field consciousness immersion</span>
+            </li>
+            <li>
+              <span class="feat-icon"><i class="fa-solid fa-download"></i></span>
+              <span>Digital audio download — practice anywhere</span>
+            </li>
+          </ul>
+
+          <a href="#connect" class="btn btn-purple">
+            <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            Notify Me at Launch
+          </a>
+        </div>
+
+        <div class="meditation-visual reveal">
+          <div class="pyramid-visual">
+            <!-- Animated Pyramid SVG -->
+            <svg class="pyramid-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-label="Sacred Pyramid">
+              <defs>
+                <linearGradient id="pyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.9"/>
+                  <stop offset="50%"  stop-color="#E8C96A" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#C9A84C" stop-opacity="0.9"/>
+                </linearGradient>
+                <linearGradient id="pyPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%"   stop-color="#3A1A6E" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#6B3FA0" stop-opacity="0.6"/>
+                </linearGradient>
+                <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%"   stop-color="#1A2E5A" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#2A4A8A" stop-opacity="0.6"/>
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="3" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- Outer circle -->
+              <circle cx="150" cy="150" r="140" fill="none" stroke="url(#pyGold)" stroke-width="0.5" opacity="0.4"/>
+              <circle cx="150" cy="150" r="110" fill="none" stroke="url(#pyGold)" stroke-width="0.3" opacity="0.3"/>
+
+              <!-- Main pyramid (front face) -->
+              <polygon points="150,30 260,240 40,240"
+                fill="url(#pyPurple)" stroke="url(#pyGold)" stroke-width="1.5" filter="url(#glow)"/>
+
+              <!-- Left face shading -->
+              <polygon points="150,30 40,240 150,240"
+                fill="url(#pyBlue)" stroke="url(#pyGold)" stroke-width="0.5" opacity="0.5"/>
+
+              <!-- Inner triangle (Power of 3) -->
+              <polygon points="150,70 230,220 70,220"
+                fill="none" stroke="url(#pyGold)" stroke-width="1" opacity="0.6"/>
+
+              <!-- Center eye / orb -->
+              <circle cx="150" cy="160" r="18" fill="none" stroke="url(#pyGold)" stroke-width="1" opacity="0.8"/>
+              <circle cx="150" cy="160" r="8" fill="url(#pyGold)" opacity="0.9"/>
+
+              <!-- Three power points -->
+              <circle cx="150" cy="30" r="5" fill="url(#pyGold)" filter="url(#glow)"/>
+              <circle cx="260" cy="240" r="5" fill="url(#pyGold)" filter="url(#glow)"/>
+              <circle cx="40" cy="240" r="5" fill="url(#pyGold)" filter="url(#glow)"/>
+
+              <!-- Radiant lines from apex -->
+              <line x1="150" y1="30" x2="150" y2="10" stroke="url(#pyGold)" stroke-width="1" opacity="0.5"/>
+              <line x1="150" y1="30" x2="130" y2="15" stroke="url(#pyGold)" stroke-width="0.5" opacity="0.3"/>
+              <line x1="150" y1="30" x2="170" y2="15" stroke="url(#pyGold)" stroke-width="0.5" opacity="0.3"/>
+
+              <!-- Number 3 label -->
+              <text x="150" y="275" text-anchor="middle" font-family="serif" font-size="10"
+                fill="url(#pyGold)" letter-spacing="4" opacity="0.7">THE POWER OF 3</text>
+            </svg>
+            <span class="pyramid-label">The Power Pyramid</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Connect / Newsletter ───────────────────────────────── -->
+  <section class="connect-section" id="connect" aria-label="Connect with Eric Swanson">
+    <div class="connect-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Enter the Circle ✦</span>
+        <h2 class="section-title">Stay Connected</h2>
+        <div class="section-rule"></div>
+        <p class="section-lead">
+          Join the Maharishi Sacred Spaces community. Receive sacred teachings, early access to new offerings, and updates on the book and meditation release.
+        </p>
+      </div>
+
+      <form class="connect-form reveal" aria-label="Email signup form" novalidate>
+        <input
+          type="email"
+          class="connect-input"
+          placeholder="Your email address"
+          aria-label="Email address"
+          required
+        />
+        <button type="submit" class="connect-btn">Join</button>
+      </form>
+
+      <div class="social-links reveal" aria-label="Social media links">
+        <a href="https://www.instagram.com/maharishi.sacredspace/" target="_blank" rel="noopener noreferrer"
+           class="social-link" aria-label="Instagram @maharishi.sacredspace">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/maharishisacredspaces/" target="_blank" rel="noopener noreferrer"
+           class="social-link" aria-label="Instagram @maharishisacredspaces">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/maharishisacredspaces" target="_blank" rel="noopener noreferrer"
+           class="social-link" aria-label="Facebook Maharishi Sacred Spaces">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-logo">Maharishi Sacred Spaces</div>
+    <p class="footer-tagline">✦ &nbsp; Sacred Tools · Quantum Consciousness · Inner Alignment &nbsp; ✦</p>
+
+    <ul class="footer-nav" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#book">The Book</a></li>
+      <li><a href="#meditation">Meditation</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+
+    <p class="footer-copy">&copy; <span id="year"></span> Eric Swanson · Maharishi Sacred Spaces · All Rights Reserved</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
