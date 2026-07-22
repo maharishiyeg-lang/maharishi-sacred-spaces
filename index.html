@@ -366,39 +366,71 @@
         </p>
       </div>
 
-      <!-- ══════════════════════════════════════════════════════════
-           EMAIL LIST FORM
-           To activate this form, replace the action URL below with
-           your Mailchimp embed action URL (found in:
-           Mailchimp → Audience → Signup forms → Embedded forms).
-           Free plan: up to 500 contacts / 1,000 emails per month.
-           ══════════════════════════════════════════════════════════ -->
-      <form
-        class="connect-form reveal"
-        aria-label="Email signup form"
-        action="https://YOUR-MAILCHIMP-LIST-URL.list-manage.com/subscribe/post?u=XXXXXXXX&amp;id=XXXXXXXX"
-        method="post"
-        target="_blank"
-        novalidate
-      >
-        <!-- Real email field -->
-        <input
-          type="email"
-          name="EMAIL"
-          class="connect-input"
-          placeholder="Your email address"
-          aria-label="Email address"
-          required
-        />
-        <!-- Mailchimp bot-protection honeypot (keep hidden) -->
-        <div style="position:absolute; left:-5000px;" aria-hidden="true">
-          <input type="text" name="b_XXXXXXXX_XXXXXXXX" tabindex="-1" value="" />
+      <!-- MailerLite Embedded Signup Form — form ID 44029587 -->
+      <div class="mailerlite-wrap reveal" style="max-width:420px; margin:0 auto;">
+        <div id="mlb2-44029587" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-44029587">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <div class="ml-form-embedContent" style="text-align:center; margin-bottom:1rem;">
+                  <h4 style="font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:1.25rem; font-weight:400; margin:0 0 0.4rem;">Join the Sacred Circle</h4>
+                  <p style="color:var(--text-muted); font-size:0.85rem; margin:0;">Receive sacred teachings, early access &amp; book updates.</p>
+                </div>
+                <form class="ml-block-form"
+                  action="https://assets.mailerlite.com/jsonp/2526845/forms/193721637224318791/subscribe"
+                  data-code=""
+                  method="post"
+                  target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input
+                          aria-label="email"
+                          aria-required="true"
+                          type="email"
+                          class="connect-input"
+                          name="fields[email]"
+                          placeholder="Your email address"
+                          autocomplete="email"
+                          style="width:100%; margin-bottom:0.75rem;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="ml-submit" value="1" />
+                  <input type="hidden" name="anticsrf" value="true" />
+                  <div class="ml-form-embedSubmit" style="text-align:center;">
+                    <button type="submit" class="connect-btn" style="width:100%;">Join</button>
+                    <button disabled="disabled" style="display:none;" type="button" class="connect-btn loading">
+                      <span>Loading...</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="ml-form-successBody row-success" style="display:none; padding:1.5rem; text-align:center;">
+                <div class="ml-form-successContent">
+                  <h4 style="font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:1.2rem;">✦ Welcome to the Circle ✦</h4>
+                  <p style="color:var(--text-muted); font-size:0.85rem;">You have successfully joined our subscriber list.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="connect-btn">Join</button>
-      </form>
+      </div>
       <p class="connect-form-note reveal" style="font-size:0.72rem; color:var(--text-muted); margin-top:0.75rem; text-align:center; opacity:0.7;">
         Your sacred space is private. No spam, ever.
       </p>
+
+      <!-- MailerLite JS -->
+      <script>
+        function ml_webform_success_44029587() {
+          var $ = ml_jQuery || jQuery;
+          $('.ml-subscribe-form-44029587 .row-success').show();
+          $('.ml-subscribe-form-44029587 .row-form').hide();
+        }
+      </script>
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+      <script>fetch("https://assets.mailerlite.com/jsonp/2526845/forms/193721637224318791/takel")</script>
 
       <div class="social-links reveal" aria-label="Social media links">
         <a href="https://www.instagram.com/maharishi.sacredspace/" target="_blank" rel="noopener noreferrer"
