@@ -1003,6 +1003,65 @@ section {
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
 }
 
+/* ── MailerLite embed overrides ────────────────────────────── */
+.mailerlite-wrap {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.mailerlite-wrap .ml-form-embedContainer {
+  display: block !important;
+  width: 100% !important;
+}
+.mailerlite-wrap .ml-form-embedWrapper {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+.mailerlite-wrap .ml-form-embedBody {
+  padding: 0 !important;
+}
+.mailerlite-wrap .ml-form-embedContent {
+  margin-bottom: 1rem !important;
+}
+.mailerlite-wrap .ml-form-embedContent h4 {
+  color: var(--gold) !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+}
+.mailerlite-wrap .ml-form-embedContent p {
+  color: var(--text-muted) !important;
+  font-size: 0.85rem !important;
+}
+.mailerlite-wrap .ml-form-fieldRow {
+  margin-bottom: 0.75rem !important;
+}
+.mailerlite-wrap .ml-form-embedSubmit {
+  margin: 0 !important;
+  float: none !important;
+  width: 100% !important;
+}
+.mailerlite-wrap .ml-form-embedSubmit button.primary {
+  background: var(--gradient-gold) !important;
+  color: var(--deep-green) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+  border-radius: 0 !important;
+  padding: 1rem 1.75rem !important;
+  width: 100% !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+}
+.mailerlite-wrap .ml-form-embedSubmit button.primary:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
