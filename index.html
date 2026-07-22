@@ -98,7 +98,7 @@
       <div class="hero-divider"></div>
       <p class="hero-tagline">A Quantum Spiritual Guide to aid others in their alignment with self, using sacred tools and techniques to create balance.</p>
       <div class="hero-actions">
-        <a href="#book" class="btn btn-primary">
+        <a href="#purchase" class="btn btn-primary">
           <i class="fa-solid fa-book-open" aria-hidden="true"></i>
           Explore the Book
         </a>
@@ -212,22 +212,8 @@
             A golden key. A cosmic spiral. Seven chakras lighting the path. <strong>Magical Keys</strong> is a transformative workbook written from the deep intuitive waters of Piscean wisdom — a guide for navigating life's complexity with grace, clarity, and sacred awareness. Through sacred tools, energetic practices, and quantum insight, this book unlocks the hidden doors within you, revealing the power, peace, and purpose that have always been yours.
           </p>
 
+          <!-- Hardcover coming soon badge -->
           <div class="book-purchase-options">
-            <!-- Digital Download -->
-            <div class="purchase-option">
-              <div class="option-info">
-                <span class="option-type">
-                  <i class="fa-solid fa-download" aria-hidden="true"></i>
-                  &nbsp; Digital Download
-                </span>
-                <span class="option-desc">Instant PDF — Begin your journey today</span>
-              </div>
-              <a href="#connect" class="btn btn-primary" style="padding:0.6rem 1.25rem; font-size:0.65rem;">
-                Get It Now
-              </a>
-            </div>
-
-            <!-- Hardcover Placeholder -->
             <div class="purchase-option coming-soon">
               <div class="option-info">
                 <span class="option-type">
@@ -238,6 +224,16 @@
               </div>
               <span class="option-badge badge-soon">Coming Soon</span>
             </div>
+          </div>
+
+          <!-- ── Payhip Digital Purchase Embed ── -->
+          <div id="purchase" class="payhip-purchase-wrap" style="margin-top:2rem;">
+            <p class="option-type" style="margin-bottom:0.75rem;">
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              &nbsp; Digital Download — Instant PDF
+            </p>
+            <div class="payhip-embed-page" data-key="vZGLV"></div>
+            <script type="text/javascript" src="https://payhip.com/embed-page.js?v=24u68985"><\/script>
           </div>
         </div>
       </div>
@@ -370,16 +366,39 @@
         </p>
       </div>
 
-      <form class="connect-form reveal" aria-label="Email signup form" novalidate>
+      <!-- ══════════════════════════════════════════════════════════
+           EMAIL LIST FORM
+           To activate this form, replace the action URL below with
+           your Mailchimp embed action URL (found in:
+           Mailchimp → Audience → Signup forms → Embedded forms).
+           Free plan: up to 500 contacts / 1,000 emails per month.
+           ══════════════════════════════════════════════════════════ -->
+      <form
+        class="connect-form reveal"
+        aria-label="Email signup form"
+        action="https://YOUR-MAILCHIMP-LIST-URL.list-manage.com/subscribe/post?u=XXXXXXXX&amp;id=XXXXXXXX"
+        method="post"
+        target="_blank"
+        novalidate
+      >
+        <!-- Real email field -->
         <input
           type="email"
+          name="EMAIL"
           class="connect-input"
           placeholder="Your email address"
           aria-label="Email address"
           required
         />
+        <!-- Mailchimp bot-protection honeypot (keep hidden) -->
+        <div style="position:absolute; left:-5000px;" aria-hidden="true">
+          <input type="text" name="b_XXXXXXXX_XXXXXXXX" tabindex="-1" value="" />
+        </div>
         <button type="submit" class="connect-btn">Join</button>
       </form>
+      <p class="connect-form-note reveal" style="font-size:0.72rem; color:var(--text-muted); margin-top:0.75rem; text-align:center; opacity:0.7;">
+        Your sacred space is private. No spam, ever.
+      </p>
 
       <div class="social-links reveal" aria-label="Social media links">
         <a href="https://www.instagram.com/maharishi.sacredspace/" target="_blank" rel="noopener noreferrer"
