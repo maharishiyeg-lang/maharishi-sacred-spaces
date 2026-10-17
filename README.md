@@ -2,7 +2,7 @@
 
 **An immersive brand storytelling website for Eric Swanson — Quantum Spiritual Guide, Author, and Teacher.**
 
-Live site: [https://your-username.github.io/maharishi-sacred-spaces](https://your-username.github.io/maharishi-sacred-spaces)
+Live site: [https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/](https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/)
 
 ---
 
@@ -55,7 +55,7 @@ Maharishi Sacred Spaces is a sanctuary of consciousness, sacred tools, and trans
 1. Push this repository to GitHub
 2. Go to **Settings → Pages**
 3. Set source to **Deploy from a branch → main → / (root)**
-4. Your site will be live at `https://your-username.github.io/maharishi-sacred-spaces`
+4. Your site will be live at `https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/`
 
 ## Social Media
 
