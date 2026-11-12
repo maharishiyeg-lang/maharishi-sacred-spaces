@@ -1115,6 +1115,18 @@ section {
   margin-bottom: 2rem;
 }
 
+.footer-domain {
+  margin: -1rem 0 2rem;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.footer-domain a:hover,
+.footer-domain a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .footer-nav {
   display: flex;
   justify-content: center;

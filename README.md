@@ -2,7 +2,7 @@
 
 **An immersive brand storytelling website for Eric Swanson — Quantum Spiritual Guide, Author, and Teacher.**
 
-Live site: [https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/](https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/)
+Website: [https://maharishisacredspaces.com/](https://maharishisacredspaces.com/)
 
 ---
 
@@ -55,7 +55,10 @@ Maharishi Sacred Spaces is a sanctuary of consciousness, sacred tools, and trans
 1. Push this repository to GitHub
 2. Go to **Settings → Pages**
 3. Set source to **Deploy from a branch → main → / (root)**
-4. Your site will be live at `https://maharishiyeg-lang.github.io/maharishi-sacred-spaces/`
+4. Set the custom domain to `maharishisacredspaces.com`; keep the root `CNAME` file committed.
+5. At Porkbun, point the root ALIAS record to `maharishiyeg-lang.github.io`. Alternatively, use A records for `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Point the `www` CNAME to `maharishiyeg-lang.github.io` (no repository path).
+6. Remove only conflicting website parking records; preserve email and other unrelated records.
+7. Enable **Enforce HTTPS** once GitHub provisions the certificate. The public website is `https://maharishisacredspaces.com/`.
 
 ## Social Media
 
